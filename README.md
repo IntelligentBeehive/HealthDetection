@@ -1,32 +1,13 @@
-# The IntelligentBeehive Project
+Hive health detection by only using a simple Camera!
 
-## Introduction
-The goal of the Intelligent Beehive Project is to research, invent and implement possible ways to gather and analyse Data from a BeeHive using state of the art technologies like Artificial Intelligence and Computer Vision.
-The project is split into several different components
+Steps:
+classify the broodpattern using AI trained on the complex features of an healthy and unhealthy broodpattern. Use the confidence as an factor of the state of the brood pattern
 
+Use Computer Vision to calculate the area of bee clusters to calculate the population in the beehive
 
+Store this data inside a DataBase
 
-## Possible outcomes for this project are:
-* Using the Data to create a map of the biodiversity of a certain area so that for example city councils can plant more plants in a certain area. 
-* Using the Data to make a automated hive monitoring system which can notify the bee owner when the hive might be in danger.
+Calculate trends on this DataBase to find patterns of degrading hive health
 
-## Components
-* Waggle Dance Detection
-* Hive Health Detection
-* Bee Sound Detection
-* Pollen Color Detection
-* Hive Sensors
+Warn bee keeper if there is a trend in which the hive health is degreding,
 
-## Institute's
-Fontys 
-## Our team
-Our team that is currently working on this project are:
-* Luuk Ebenau (waggledance detection)
-* Sieuwe Elferink (bee health detection)
-* Dirk Heijen (bee audio analysis)
-* Dion Trilbeek (Sensor data)
-* Hugo  (Pollen Analysis)
-
-## Used Hardware
-For this project we've used a large amount of hardware components (besides the beehive)
-These are the hardware components that we use:
