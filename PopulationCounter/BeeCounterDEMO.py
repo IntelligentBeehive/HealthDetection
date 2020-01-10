@@ -39,11 +39,9 @@ def detect(img):
 
     return AreaCount
 
-def run():
+def run(img):
 
     TotalAreaCount = 0
-
-    img = cv2.imread("/home/sieuwe/Desktop/Projects/Bijenkast/HealthDetection/PopulationCounter/kast1.jpeg")
 
     splitHeight = round(img.shape[0] / 3)
     splitWidth = round(img.shape[1] / 3)

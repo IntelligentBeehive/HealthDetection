@@ -23,6 +23,7 @@ from __future__ import print_function
 import argparse
 import sys
 import time
+import os
 
 import numpy as np
 import tensorflow as tf
@@ -71,14 +72,11 @@ def load_labels(label_file):
   return label
 
 def Classify(file_name):
-  #file_name = "tf_files/flower_photos/daisy/3475870145_685a19116d.jpg"
   
-  #import os
-  #THIS_FOLDER = os.path.dirname(os.path.abspath(__file__))
-  #my_file = os.path.join(THIS_FOLDER, 'myfile.txt')
-  
-  model_file = "/home/sieuwe/Desktop/Projects/Bijenkast/HealthDetection/BroodPatternAI/BestModel/broodPatternClassifierDataSetV1_91.pb"
-  label_file = "/home/sieuwe/Desktop/Projects/Bijenkast/HealthDetection/BroodPatternAI/BestModel/retrained_labelsDataSetV1_91.txt"
+  dirname = os.path.dirname(__file__)
+  model_file = os.path.join(dirname, "BestModel/broodPatternClassifierDataSetV1_91.pb")
+  label_file = os.path.join(dirname, "BestModel/retrained_labelsDataSetV1_91.txt")
+
   input_height = 224
   input_width = 224
   input_mean = 128

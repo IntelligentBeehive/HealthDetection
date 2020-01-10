@@ -16,7 +16,7 @@ def detect(img):
 
     bgd_mask = cv2.inRange(img_hsv, np.array([15, 26, 47]), np.array([26, 107, 88])) 
 
-
+    cv2.imshow("mask", bgd_mask)
     #final_mask = cv2.erode(bgd_mask, np.ones((3, 3), dtype=np.uint8))
     final_mask = cv2.dilate(bgd_mask, np.ones((5, 5), dtype=np.uint8))
 
