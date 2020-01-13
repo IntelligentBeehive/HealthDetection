@@ -3,35 +3,37 @@ sys.path.insert(1, 'BroodPatternAI/')
 sys.path.insert(2, 'PopulationCounter/')
 
 from Classifier import *
-from Demo import *
+from BeeCounterDEMO import *
 from random import randrange
 
 count = 0
 
 while True:
 
-    beeCount = run()
+    img = cv2.imread("PopulationCounter/kast1.jpeg")
+ 
+    beeCount = run(img)
 
     if count > 4:
         count = 0
 
     if count == 0:
-        broodimagepath = "/home/sieuwe/Desktop/Projects/Bijenkast/HealthDetection/BroodPatternAI/DataSetV1/Test/h5.jpg"
+        broodimagepath = "BroodPatternAI/DataSetV1/Test/h5.jpg"
     
     elif count == 1:
-        broodimagepath = "/home/sieuwe/Desktop/Projects/Bijenkast/HealthDetection/BroodPatternAI/DataSetV1/Test/h1.png"
+        broodimagepath = "BroodPatternAI/DataSetV1/Test/h1.png"
     
     elif count == 2:
-        broodimagepath = "/home/sieuwe/Desktop/Projects/Bijenkast/HealthDetection/BroodPatternAI/DataSetV1/Test/b2.jpg"
+        broodimagepath = "BroodPatternAI/DataSetV1/Test/b2.jpg"
     
     elif count == 3:
-        broodimagepath = "/home/sieuwe/Desktop/Projects/Bijenkast/HealthDetection/BroodPatternAI/DataSetV1/Test/h6.jpg"
+        broodimagepath = "BroodPatternAI/DataSetV1/Test/h6.jpg"
     
     elif count == 4:
-        broodimagepath = "/home/sieuwe/Desktop/Projects/Bijenkast/HealthDetection/BroodPatternAI/DataSetV1/Test/b6.jpg"
+        broodimagepath = "BroodPatternAI/DataSetV1/Test/b6.jpg"
  
     else:
-        broodimagepath = "/home/sieuwe/Desktop/Projects/Bijenkast/HealthDetection/BroodPatternAI/DataSetV1/Test/b6.jpg"
+        broodimagepath = "BroodPatternAI/DataSetV1/Test/b6.jpg"
 
     count += 1
 
